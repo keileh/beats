@@ -1,0 +1,18 @@
+.delivery {
+    background: #181818;
+    color:#fff;
+    background: url(../img/form-background.png) center bottom/100% no-repeat;
+}
+
+.delivery__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+.delivery__content-title {
+    margin-bottom: 57px;
+}

@@ -1,0 +1,70 @@
+.advantages__list {
+    display: flex;
+}
+
+.advantage {
+    text-align: center;
+}
+
+.advantage__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        content: url(/img/why-icon.png);
+        position: absolute;
+        top: 45px;
+        right: 1px;
+        transform: translate(50%, 50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+        
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.advantage__icon-wrapper {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.advantage__image {
+    width: 56px;
+    height: 60px;
+}
+
+.advantage__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.advantage__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 7px;
+}
+
+.advantage__desc {
+    color: $grey;
+    margin: 0 auto;
+    max-width: 250px;
+    line-height: 19px;
+}

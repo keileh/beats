@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 108%;
+}
+
+.header__content-title {
+    margin-bottom: 18px;
+}
+
+.content__subtitle {
+    color: $grey;
+    text-align: center;
+    padding: 0 20%;
+    margin-bottom: 62px;
+    line-height: 19px;
+}

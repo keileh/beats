@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 27px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__link {
+    font-size: 18px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.contacts__phone {
+    font-size: 18px;
+    font-style: normal;
+
+    &:before {
+        content: url(/img/phone_icon.png);
+        margin-right: 7px;
+        height: 14px;
+        width: 14px;
+    }
+}

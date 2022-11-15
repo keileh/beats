@@ -1,0 +1,42 @@
+.menu {
+    position: fixed;
+    top: 245px;
+    right: 45px;
+}
+
+.menu__item {
+    margin-bottom: 12px;
+
+    &-active {
+        .menu__link {
+            border-color: $red;
+            
+            &:before {
+            background: $red;
+            }
+        }
+    }
+}
+
+.menu__link {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: url();
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $light-black;
+        opacity: 0.6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
