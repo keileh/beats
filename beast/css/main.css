@@ -461,7 +461,7 @@ template {
   font-style: normal;
 }
 .contacts__phone:before {
-  content: url(/img/phone_icon.png);
+  content: url(../img/phone_icon.png);
   margin-right: 7px;
   height: 14px;
   width: 14px;
