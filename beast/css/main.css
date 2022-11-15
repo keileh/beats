@@ -402,7 +402,7 @@ template {
   height: 100%;
   padding-top: 24px;
   padding-bottom: 50px;
-  background: url(/img/headphones__back.png) center right/50% auto no-repeat;
+  background: url(../img/headphones__back.png) center right/50% auto no-repeat;
 }
 
 .hero__title {
@@ -820,7 +820,7 @@ template {
   border-radius: 0;
 }
 .radio-checkbox .radio__visible:before {
-  background: url(/img/checkbox-icon.png) center center no-repeat;
+  background: url(../img/checkbox-icon.png) center center no-repeat;
 }
 
 .radio__elem {
