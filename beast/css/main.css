@@ -707,7 +707,7 @@ img {
   }
 }
 .advantage__item:before {
-  content: url(/img/why-icon.png);
+  content: url(../img/why-icon.png);
   position: absolute;
   top: 2.8125rem;
   right: 0.0625rem;
@@ -1033,7 +1033,7 @@ img {
   border-radius: 0;
 }
 .radio-checkbox .radio__visible:before {
-  background: url(/img/checkbox-icon.png) center center no-repeat;
+  background: url(../img/checkbox-icon.png) center center no-repeat;
 }
 
 .radio__elem {
