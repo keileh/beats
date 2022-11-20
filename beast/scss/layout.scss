@@ -1,9 +1,17 @@
 html, body {
     height: 100%;
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
 }
 
 body {
-    font-size: $baseFontSize;
     font-family: 'Play', sans-serif;
     line-height: 1.42;
     position: relative;
@@ -13,19 +21,21 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
+    min-width: $containerWidth + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
+    position: relative;
 }
 
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +73,7 @@ footer {
 a {
     color: inherit;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 img {

@@ -1,11 +1,15 @@
 .menu {
     position: fixed;
-    top: 245px;
-    right: 45px;
+    top: rem(245px);
+    right: rem(45px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__item {
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
 
     &-active {
         .menu__link {
@@ -19,18 +23,18 @@
 }
 
 .menu__link {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
 
     &::before {
         content: url();
         display: block;
-        width: 10px;
-        height: 10px;
+        width: rem(10px);
+        height: rem(10px);
         border-radius: 50%;
         background: $light-black;
         opacity: 0.6;

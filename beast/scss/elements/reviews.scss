@@ -3,24 +3,24 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-top: 24px;
-    padding-bottom: 50px;
+    padding-top: rem(24px);
+    padding-bottom: rem(50px);
 }
 
 .comment__display {
     background: #F8FAF9;
-    padding: 42px 107px 42px 42px;
+    padding: rem(42px) rem(107px) rem(42px) rem(42px);
     position: relative;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 
     &:before {
         content: '';
-        width: 83px;
-        height: 83px;
+        width: rem(83px);
+        height: rem(83px);
         display: block;
         position: absolute;
-        top: -60px;
+        top: rem(-60px);
         left: 50%;
         transform: translateX(-50%);
         background-color: #fff;
@@ -30,15 +30,30 @@
 
 .comment__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__content-title {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        margin-bottom: rem(50px);
+    }
 }
 
 .comment__avatar {
-    width: 254px;
-    height: 264px;
+    width: rem(254px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(134px);
+        height: rem(134px);
+    }
 }
 
 .comment__avatar-image {
@@ -49,25 +64,29 @@
 
 .comment__content {
     flex: 1;
-    margin-left: 36px;
-    margin-bottom: 15px;    
-    padding-top: 30px;
+    margin-left: rem(36px);
+    margin-bottom: rem(15px);    
+    padding-top: rem(30px);
+
+    @include tablets {
+        padding-top: 2.575rem;
+    }
 }
 
 .comment__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 700;
-    margin-bottom: 27px;
-    line-height: 28px;
+    margin-bottom: rem(27px);
+    line-height: rem(28px);
 }
 
 .comment__text {
-    margin-bottom: 38px;
-    line-height: 19px;
+    margin-bottom: rem(38px);
+    line-height: rem(19px);
 }
 
 .comment__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 700;
 }
 

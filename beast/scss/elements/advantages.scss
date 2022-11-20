@@ -1,9 +1,18 @@
 .advantages__list {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .advantage {
     text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+    }
 }
 
 .advantage__item {
@@ -11,12 +20,28 @@
     padding: 0 3%;
     position: relative;
 
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones {
+        margin-bottom: 31px;
+    }
+
     &:before {
         content: url(/img/why-icon.png);
         position: absolute;
-        top: 45px;
-        right: 1px;
+        top: rem(45px);
+        right: rem(1px);
         transform: translate(50%, 50%);
+
+        @include tablets {
+            display: none;
+        }
+
+        @include phones {
+            display: none;
+        }
     }
 
     &:first-child {
@@ -34,18 +59,26 @@
 
 .advantage__icon-wrapper {
     display: inline-block;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     position: relative;
     background: #F2F5F4;
-    border-radius: 100px;
+    border-radius: rem(100px);
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
+
+    @include tablets {
+        margin-bottom: 1.8175rem;
+    }
+
+    @include phones {
+        margin-right: rem(12px);
+    }
 }
 
 .advantage__image {
-    width: 56px;
-    height: 60px;
+    width: rem(56px);
+    height: rem(60px);
 }
 
 .advantage__icon {
@@ -56,15 +89,15 @@
 }
 
 .advantage__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 700;
-    line-height: 28px;
-    margin-bottom: 7px;
+    line-height: rem(28px);
+    margin-bottom: rem(7px);
 }
 
 .advantage__desc {
     color: $grey;
     margin: 0 auto;
-    max-width: 250px;
-    line-height: 19px;
+    max-width: rem(250px);
+    line-height: rem(19px);
 }

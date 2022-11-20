@@ -1,8 +1,8 @@
 .btn {
     text-transform: uppercase;
-    padding: 21px 40px;
-    border: 1px solid;
-    border-radius: 30px;
+    padding: rem(21px) rem(40px);
+    border: rem(1px) solid;
+    border-radius: rem(30px);
     font-weight: 700;
     border: none;
 
@@ -19,7 +19,7 @@
     &-transparent {
         background: transparent;
         text-transform: none;
-        font-size: 16px;
+        font-size: rem(16px);
         font-weight: 400;
         color: #fff;
 
