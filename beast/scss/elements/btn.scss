@@ -27,4 +27,10 @@
             color: $red;
         }
     }
+
+    &-special {
+        @include phones {
+            font-size: rem(19px);
+        }
+    }
 }

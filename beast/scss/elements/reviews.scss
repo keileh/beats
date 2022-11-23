@@ -26,6 +26,20 @@
         background-color: #fff;
         border-radius: 50%;
     }
+
+    @include tablets {
+        padding: rem(56px) rem(24px);
+        margin-bottom: rem(30px);
+    }
+
+    @include phones {
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 3rem;
+
+        &:before {
+            display: none;
+        }
+    }
 }
 
 .comment__display-inner {
@@ -69,7 +83,12 @@
     padding-top: rem(30px);
 
     @include tablets {
-        padding-top: 2.575rem;
+        padding-top: rem(29px);
+        margin: 0;
+    }
+
+    @include phones {
+        padding-top: rem(26px);
     }
 }
 
@@ -78,16 +97,37 @@
     font-weight: 700;
     margin-bottom: rem(27px);
     line-height: rem(28px);
+
+    @include tablets {
+        margin-bottom: rem(15px);
+    }
+
+    @include phones {
+        margin-bottom: 0.65rem;
+    }
 }
 
 .comment__text {
     margin-bottom: rem(38px);
     line-height: rem(19px);
+    color: $grey;
+
+    @include tablets {
+        margin-bottom: rem(15px);
+    }
+
+    @include phones {
+        margin-bottom: 0.6rem;
+    }
 }
 
 .comment__author {
     font-size: rem(18px);
     font-weight: 700;
+
+    @include phones {
+        font-weight: 400;
+    }
 }
 
 .comment__switcher {

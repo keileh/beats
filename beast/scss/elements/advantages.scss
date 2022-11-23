@@ -25,7 +25,7 @@
     }
 
     @include phones {
-        margin-bottom: 31px;
+        margin-bottom: rem(21px);
     }
 
     &:before {
@@ -68,11 +68,12 @@
     margin-bottom: rem(15px);
 
     @include tablets {
-        margin-bottom: 1.8175rem;
+        margin-bottom: rem(16px);
     }
 
     @include phones {
         margin-right: rem(12px);
+        flex-shrink: 0;
     }
 }
 
@@ -93,6 +94,20 @@
     font-weight: 700;
     line-height: rem(28px);
     margin-bottom: rem(7px);
+
+    @include tablets {
+        margin-bottom: rem(17px);
+    }
+
+    @include phones {
+        margin-bottom: rem(5px);
+    }
+}
+
+.advantage__text {
+    @include phones {
+        padding-top: rem(15px);
+    }
 }
 
 .advantage__desc {
@@ -100,4 +115,12 @@
     margin: 0 auto;
     max-width: rem(250px);
     line-height: rem(19px);
+
+    @include tablets {
+        max-width: rem(234px);
+    }
+
+    @include phones {
+        max-width: initial;
+    }
 }

@@ -3,11 +3,12 @@ html, body {
     font-size: $baseFontSize;
 
     @include tablets {
-        font-size: $baseFontSize - 1px;
+        // font-size: $baseFontSize - 1px;
     }
 
     @include phones {
-        font-size: $baseFontSize - 2px;
+        // font-size: $baseFontSize - 2px;
+        font-size: 3.33333vmin;
     }
 }
 
@@ -21,7 +22,7 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + rem(20px);
+    // min-width: rem($containerWidth) + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
@@ -36,6 +37,10 @@ body {
 .section {
     height: 100vh;
     min-height: rem(650px);
+
+    @include phones {
+        min-height: auto;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

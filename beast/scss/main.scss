@@ -23,8 +23,8 @@ $phones: 480px;
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
 @import 'elements/normalize';
+@import 'media';
 @import 'layout';
-@import 'elements/media';
 @import 'elements/hero';
 @import 'elements/header';
 @import 'elements/markers';

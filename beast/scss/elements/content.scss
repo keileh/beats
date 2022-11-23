@@ -4,6 +4,17 @@
     flex-direction: column;
 }
 
+.content__container {
+
+    @include tablets {
+        width: 99%;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+}
+
 .content-title {
     font-size: rem(48px);
     font-weight: 700;
@@ -12,8 +23,9 @@
     text-align: center;
     line-height: 108%;
 
-    @include tablets {
-        font-size: 3.2rem;
+    @include phones {
+        font-size: rem(32px);
+        line-height: rem(36px);
     }
 }
 
@@ -34,9 +46,10 @@
 
     @include tablets {
         padding: 0 11%;
+        margin-bottom: rem(52px);
     }
 
     @include phones {
-        padding: 0 7%;
+        padding: 0 6%;
     }
 }

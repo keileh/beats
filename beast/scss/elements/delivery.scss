@@ -14,4 +14,8 @@
 
 .delivery__content-title {
     margin-bottom: rem(57px);
+
+    @include phones {
+        margin-bottom: rem(41px);
+    }
 }
