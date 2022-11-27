@@ -77,16 +77,13 @@
     }
 }
 
-.advantage__image {
-    width: rem(56px);
-    height: rem(60px);
-}
-
 .advantage__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: rem(56px);
+    height: rem(60px);
 }
 
 .advantage__title {

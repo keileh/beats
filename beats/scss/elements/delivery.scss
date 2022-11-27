@@ -15,6 +15,10 @@
 .delivery__content-title {
     margin-bottom: rem(57px);
 
+    @include tablets {
+        margin-bottom: rem(23px);
+    }
+
     @include phones {
         margin-bottom: rem(41px);
     }

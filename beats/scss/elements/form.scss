@@ -32,8 +32,12 @@
     &-textarea {
         margin-bottom: rem(40px);
 
+        @include tablets {
+            margin-bottom: rem(28px);
+        }
+
         @include phones {
-            margin-bottom: 0.0125rem;
+            margin-bottom: rem(32px);
         }
     }
 }
@@ -76,7 +80,6 @@
 
     @include tablets {
         height: rem(82px);
-        margin-bottom: rem(28px);
     }
 }
 

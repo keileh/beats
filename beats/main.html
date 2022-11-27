@@ -13,8 +13,10 @@
             <section class="section hero">  
                 <div class="container hero__container"> 
                     <header class="header">
-                            <a href="" class="logo">
-                                <img src="./img/logo.svg" alt="logo">
+                        <a href="" class="logo">
+                            <svg class="logo__icon">
+                                <use xlink:href="sprite.svg#logo"></use>
+                                </svg>
                             </a>
                             <nav class="nav__header">
                                 <ul class="nav__list">
@@ -30,12 +32,12 @@
                             <address class="contacts">
                                 <a href="+78009039090" class="contacts-phone header__contacts-phone">8 800 903 90 90</a>
                             </address>
-                            <a href="" class="hamburger">
+                            <a href="#" class="hamburger" id="overlayOpener">
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                             </a>
-                    </header>
+                        </header>
                     <div class="hero__title-section">
                         <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
                         <div class="hero__desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
@@ -44,15 +46,27 @@
                     <div class="hero__title-markers">
                         <ul class="markers__list">
                             <li class="marker__item marker">
-                                <div class="marker__icon"><img src="./img/ear_icon.svg" alt=""></div>
+                                <div class="marker-icon__wrapper">
+                                    <svg class="marker__icon">
+                                        <use xlink:href="sprite.svg#ear_icon"></use>
+                                    </svg>
+                                </div>
                                 <div class="marker__text">Безупречный звук</div>
                             </li>
                             <li class="marker__item marker">
-                                <div class="marker__icon"><img src="./img/charge_icon.svg" alt=""></div>
+                                <div class="marker-icon__wrapper">
+                                    <svg class="marker__icon">
+                                        <use xlink:href="sprite.svg#charge_icon"></use>
+                                    </svg>
+                                </div>
                                 <div class="marker__text">До 40 часов работы</div>
                             </li>
                             <li class="marker__item marker">
-                                <div class="marker__icon"><img src="./img/wire_icon.svg" alt=""></div>
+                                <div class="marker-icon__wrapper">
+                                    <svg class="marker__icon">
+                                        <use xlink:href="sprite.svg#wire_icon"></use>
+                                    </svg>
+                                </div>
                                 <div class="marker__text">Технология Fast Fuel  </div>
                             </li>
                         </ul>
@@ -68,9 +82,9 @@
                     <ul class="advantages__list">
                         <li class="advantage__item advantage">
                             <div class="advantage__icon-wrapper">
-                                <div class="advantage__image">
-                                    <img src="./img/battery.svg" alt="" class="advantage__icon">
-                                </div>
+                                <svg class="advantage__icon">
+                                    <use xlink:href="sprite.svg#battery"></use>
+                                </svg>
                             </div>
                             <div class="advantage__text">
                                 <div class="advantage__title">40 часов работы</div>
@@ -79,7 +93,9 @@
                         </li>
                         <li class="advantage__item advantage">
                             <div class="advantage__icon-wrapper">
-                                <img src="./img/speaker.svg" alt="" class="advantage__icon">
+                                <svg class="advantage__icon">
+                                    <use xlink:href="sprite.svg#speaker"></use>
+                                </svg>
                             </div>
                             <div class="advantage__text">
                                 <div class="advantage__title">Фирменное звучание</div>
@@ -88,7 +104,9 @@
                         </li>
                         <li class="advantage__item advantage">
                             <div class="advantage__icon-wrapper">
-                                <img src="./img/clock.svg" alt="" class="advantage__icon">
+                                <svg class="advantage__icon">
+                                    <use xlink:href="sprite.svg#clock"></use>
+                                </svg>
                             </div>
                             <div class="advantage__text">
                                 <div class="advantage__title">Быстрая зарядка</div>
@@ -96,6 +114,113 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section products">
+                <div class="container products__container">
+                    <a href="" class="slider__arrow" id="left">
+                        <svg class="arrow__icon">
+                            <use xlink:href="sprite.svg#left-arrow"></use>
+                        </svg>
+                    </a>
+                    <div class="products__display">
+                        <ul class="products__list">
+                            <li class="products__item">
+                                <div class="products__content">
+                                    <div class="products__picture">
+                                        <img src="./img/products1.png" alt="" class="products__image">
+                                    </div>
+                                    <arctile class="products__text">
+                                        <div class="interactive-menu__wrapper">
+                                            <div class="dropdown">
+                                                <a href="" class="interactive-menu">
+                                                    <svg class="interactive-menu__icon">
+                                                        <use xlink:href="sprite.svg#interactive-menu"></use>
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown__menu">
+                                                    <ul class="dropdown__list">
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__wrapper">   
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="sprite.svg#bluetooth"></use>
+                                                                </svg>
+                                                                <div class="dropdown__text">Bluetooth</div>
+                                                                <div class="dropdown__desc">4.0</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__wrapper">  
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="sprite.svg#road"></use>
+                                                                </svg>
+                                                                <div class="dropdown__text">Дальность</div>
+                                                                <div class="dropdown__desc">12 м</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__wrapper">      
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="sprite.svg#charger"></use>
+                                                                </svg>
+                                                                <div class="dropdown__text">Зарядка</div>
+                                                                <div class="dropdown__desc">3 ч</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__wrapper">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="sprite.svg#weight"></use>
+                                                                </svg>
+                                                                <div class="dropdown__text">Вес</div>
+                                                                <div class="dropdown__desc">215гр</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__wrapper">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="sprite.svg#patent"></use>
+                                                                </svg>
+                                                                <div class="dropdown__text">Гарантия</div>
+                                                                <div class="dropdown__desc">1 год</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="products__title">beats solo 3. цвет «атласное серебро»</h3>
+                                        <div class="products__desc">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</div>
+                                        <ul class="feature__list">
+                                            <div class="feature-list__wrapper">
+                                                <li class="feature__item">
+                                                <div class="feature-item__wrapper">
+                                                    <h4 class="feature__title">Зарядка</h4>
+                                                    <div class="feature__desc">2 часа</div>
+                                                </div>
+                                                </li>
+                                                <li class="feature__item">
+                                                <div class="feature-item__cwrapper">
+                                                    <h4 class="feature__title">Вес</h4>
+                                                    <div class="feature__desc">215 грамм</div>
+                                                </div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                        <div class="products__price">
+                                            <div class="products__cost">14 990 ₽</div>
+                                            <div class="btn btn-red">заказать</div> 
+                                        </div>
+                                    </arctile>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="slider__arrow" id="right">
+                        <svg class="arrow__icon">
+                            <use xlink:href="sprite.svg#right-arrow"></use>
+                        </svg>
+                    </a>
                 </div>
             </section>
             <section class="section reviews">
@@ -225,22 +350,31 @@
                         <ul class="socials">
                             <li class="social__item">
                                 <a href="" class="social__link">
-                                    <img src="./img/vk.svg" alt="" class="social__image social__image-vk">
+                                    <svg class="social__image social__image-vk">
+                                        <use xlink:href="sprite.svg#vk"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a href="" class="social__link">
-                                    <img src="./img/fb.svg" alt="" class="social__image social__image-fb">
+                                    <!-- <img src="./img/fb.svg" alt="" class="social__image social__image-fb"> -->
+                                    <svg class="social__image social__image-fb">
+                                        <use xlink:href="sprite.svg#fb"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a href="" class="social__link">
-                                    <img src="./img/inst.svg" alt="" class="social__image social__image-inst">
+                                    <svg class="social__image social__image-inst">
+                                        <use xlink:href="sprite.svg#inst"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a href="" class="social__link">
-                                    <img src="./img/tg.svg" alt="" class="social__image social__image-tg">
+                                    <svg class="social__image social__image-tg">
+                                        <use xlink:href="sprite.svg#tg"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
@@ -279,6 +413,39 @@
                 </li>
             </ul>
         </nav>
-    </div>
-</body>
+        <div class="overlay">
+            <div class="overlay__container">
+                <ul class="overlay__list">
+                    <div class="close">
+                        <svg class="close__icon">
+                            <use xlink:href="sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                    <div class="overlay__content">
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">О нас</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Наушники</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Команда</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Цены</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Отзывы</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Как мы работаем</a>
+                        </li>
+                        <li class="overlay__item">
+                        <a href="" class="overlay__link">Контакты</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>

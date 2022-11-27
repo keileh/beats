@@ -56,7 +56,11 @@
     margin-bottom: rem(30px);
 
     @include tablets {
-        margin-bottom: rem(50px);
+        margin-bottom: rem(32px);
+    }
+
+    @include phones {
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -88,7 +92,7 @@
     }
 
     @include phones {
-        padding-top: rem(26px);
+        padding-top: 1.25rem;
     }
 }
 

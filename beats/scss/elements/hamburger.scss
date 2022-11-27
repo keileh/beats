@@ -7,6 +7,10 @@
 
     @include tablets {
         display: inline-flex;
+
+        &:hover .overlay {
+            display: block;
+        }
     }
 }
 
