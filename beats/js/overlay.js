@@ -1,23 +1,23 @@
-const openButton = document.querySelector("#overlayOpener");
-const body = document.body;
+const openButton = document.getElementById('overlayOpener');
+const overlayMenu = document.getElementById('overlayMenu');
+const closeButton = document.getElementById('overlayCloser');
 
-openButton.addEventListener("click", e => {
-    const overlayElement = document.createElement("div");
-    overlayElement.classList.add("overlay");
+openButton.addEventListener('click', e =>{
+    e.preventDefault();
 
-    const containerElement = document.createElement("div");
-    containerElement.classList.add("overlay__container");
+    overlayMenu.classList.toggle('overlay--active');
+})
 
-    const contentElement = document.createElement("div");
-    contentElement.classList.add("overlay__content");
+closeButton.addEventListener('click', e => {
+    e.preventDefault();
 
-    const closeElement = document.createElement("a");
-    closeElement.classList.add("close");
-    closeElement.textContent = "x";
-    closeElement.href = "#";
+    overlayMenu.classList.toggle('overlay--active');
+})
 
-    overlayElement.appendChild(containerElement);
-    containerElement.appendChild(closeElement);
-    containerElement.appendChild(contentElement);
-    body.appendChild(overlayElement);
+overlayMenu.addEventListener('click', e => {
+    e.preventDefault();
+
+    if (e.target.classList.contains('overlay__link')) {
+        overlayMenu.classList.remove('overlay--active');
+    }
 })

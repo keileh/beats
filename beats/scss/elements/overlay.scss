@@ -1,12 +1,16 @@
 .overlay {
     @include tablets {
     background: black;
-    opacity: 0.9;
+    // opacity: 0.9;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: none;
     position: fixed;
     top: 0;
+
+    &--active {
+        display: block;
+    }
     }
 }
 

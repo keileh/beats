@@ -118,7 +118,7 @@
             </section>
             <section class="section products">
                 <div class="container products__container">
-                    <a href="" class="slider__arrow" id="left">
+                    <a href="" class="slider__arrow slider__arrow--prev" id="left">
                         <svg class="arrow__icon">
                             <use xlink:href="sprite.svg#left-arrow"></use>
                         </svg>
@@ -216,7 +216,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="" class="slider__arrow" id="right">
+                    <a href="" class="slider__arrow slider__arrow--next" id="right">
                         <svg class="arrow__icon">
                             <use xlink:href="sprite.svg#right-arrow"></use>
                         </svg>
@@ -413,39 +413,42 @@
                 </li>
             </ul>
         </nav>
-        <div class="overlay">
+        <div class="overlay" id="overlayMenu">
             <div class="overlay__container">
                 <ul class="overlay__list">
-                    <div class="close">
-                        <svg class="close__icon">
-                            <use xlink:href="sprite.svg#close"></use>
-                        </svg>
+                    <div class="close" id="overlayCloser">
+                        <a href="#" class="close__link">
+                            <svg class="close__icon">
+                                <use xlink:href="sprite.svg#close"></use>
+                            </svg>
+                        </a>
                     </div>
                     <div class="overlay__content">
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">О нас</a>
+                        <a href="#" class="overlay__link">О нас</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Наушники</a>
+                        <a href="#" class="overlay__link">Наушники</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Команда</a>
+                        <a href="#" class="overlay__link">Команда</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Цены</a>
+                        <a href="#" class="overlay__link">Цены</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Отзывы</a>
+                        <a href="#" class="overlay__link">Отзывы</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Как мы работаем</a>
+                        <a href="#" class="overlay__link">Как мы работаем</a>
                         </li>
                         <li class="overlay__item">
-                        <a href="" class="overlay__link">Контакты</a>
+                        <a href="#" class="overlay__link">Контакты</a>
                         </li>
                     </div>
                 </ul>
             </div>
         </div>
+        <script src="./js/overlay.js"></script>
     </body>
 </html>
