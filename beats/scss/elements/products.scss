@@ -7,6 +7,13 @@
     justify-content: center;
     height: 100%;
     align-items: center;
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        margin: 0;
+    }
 }
 
 .slider__arrow {

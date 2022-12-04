@@ -396,12 +396,14 @@ img {
   max-width: 100%;
 }
 
+.overlay {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .overlay {
     background: black;
     height: 100vh;
     width: 100%;
-    display: none;
     position: fixed;
     top: 0;
   }
@@ -942,6 +944,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.products__container .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+}
 
 .slider__arrow {
   position: absolute;
@@ -1233,6 +1242,113 @@ img {
   margin-right: 1.25rem;
 }
 
+.dropdown__desc {
+  margin-left: auto;
+}
+
+.team__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.team--version--dekstop .team__content {
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team--version--dekstop {
+    display: none;
+  }
+}
+
+.team__content-title {
+  margin-bottom: 3.3125rem;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__item {
+  margin-right: 1.25rem;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
+
+.team__member {
+  width: 13.75rem;
+  height: 18.125rem;
+  margin-bottom: 1.5625rem;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  background: none;
+  border: none;
+}
+.team__title-icon {
+  width: 0.5rem;
+  height: 0.4375rem;
+}
+
+.team__desc {
+  overflow: hidden;
+  height: 0;
+  padding-top: 0.6875rem;
+}
+
+.team__desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.team__desc-title {
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .team__desc-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+}
+
+.team__desc-text {
+  color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .team__desc-text {
+    padding: 0% 20%;
+  }
+}
+
 .reviews__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1247,6 +1363,21 @@ img {
   height: 100%;
   padding-top: 1.5rem;
   padding-bottom: 3.125rem;
+}
+
+.comment__list {
+  position: relative;
+  min-height: 21.25rem;
+}
+
+.comment__item {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.comment__item--active {
+  position: static;
+  opacity: 1;
 }
 
 .comment__display {
@@ -1418,6 +1549,9 @@ img {
 .interactive-avatar-active {
   border-color: #E01F3D;
 }
+.interactive-avatar:hover {
+  border-color: #E01F3D;
+}
 
 .form {
   display: -webkit-box;
@@ -1507,6 +1641,11 @@ img {
   }
 }
 
+.input__error {
+  border-radius: 0.1875rem;
+  border-color: #E01F3D;
+}
+
 .form__input-textarea {
   height: 9.5rem;
   resize: none;
@@ -1573,7 +1712,7 @@ img {
   border-radius: 0;
 }
 .radio-checkbox .radio__visible:before {
-  background: url(/img/checkbox-icon.png) center center no-repeat;
+  background: url(../img/checkbox-icon.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -1837,4 +1976,38 @@ img {
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+.modal {
+  display: none;
+}
+
+.fancybox__content {
+  padding: 0 !important;
+}
+
+.carousel__button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 2.3125rem 3.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 2.4375rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #000;
 }

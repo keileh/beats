@@ -73,6 +73,11 @@
     }
 }
 
+.input__error {
+    border-radius: rem(3px);
+    border-color: #E01F3D;
+}
+
 .form__input-textarea {
     height: rem(152px);
     resize: none;
@@ -124,7 +129,7 @@
             border-radius: 0;
 
             &:before {
-                background: url(/img/checkbox-icon.png) center center no-repeat;
+                background: url(../img/checkbox-icon.png) center center no-repeat;
             }
         }
     }

@@ -4,7 +4,6 @@
     height: rem(91px);
     position: relative;
     background: #9A9A9A;
-    // overflow: hidden;
     border-radius: 4px;
     margin-bottom: rem(20px);
 
@@ -77,4 +76,8 @@
 
 .dropdown__text {
     margin-right: rem(20px);
+}
+
+.dropdown__desc {
+    margin-left: auto;
 }
