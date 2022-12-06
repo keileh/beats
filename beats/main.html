@@ -320,7 +320,7 @@
             <section class="section team">
                 <div class="container team__container">
                     <h2 class="content-title team__content-title">Команда</h2>
-                    <ul class="team__list team--version--dekstop">
+                    <ul class="team__list">
                         <li class="team__item">
                             <div class="team__member">
                                 <img class="team__member-avatar" src="./img/member_avatar1.png" alt="">
@@ -333,6 +333,9 @@
                             </button>
                             <div class="team__desc team__desc--active">
                                 <div class="team__desc-container">
+                                    <div class="team__member team__member--mobile">
+                                        <img class="team__member-avatar" src="./img/member_avatar1.png" alt="">
+                                    </div>
                                     <div class="team__desc-title">Главный технолог</div>
                                     <div class="team__desc-text">Отвечает за вкусовые качества и калорийность.</div>
                                 </div>
@@ -350,6 +353,9 @@
                             </button>
                             <div class="team__desc">
                                 <div class="team__desc-container">
+                                    <div class="team__member team__member--mobile">
+                                        <img class="team__member-avatar" src="./img/member_avatar2.png" alt="">
+                                    </div>
                                     <div class="team__desc-title">Специалист по упаковке</div>
                                     <div class="team__desc-text">Автор запоминающегося стиля наших батончиков.</div>
                                 </div>
@@ -367,6 +373,9 @@
                             </button>
                             <div class="team__desc">
                                 <div class="team__desc-container">
+                                    <div class="team__member team__member--mobile">
+                                        <img class="team__member-avatar" src="./img/member_avatar3.png" alt="">
+                                    </div>
                                     <div class="team__desc-title">Оператор</div>
                                     <div class="team__desc-text">Разработал дизан наушников beats solo 3.</div>
                                 </div>
@@ -384,74 +393,7 @@
                             </button>
                             <div class="team__desc">
                                 <div class="team__desc-container">
-                                    <div class="team__desc-title">PR, маркетинг</div>
-                                    <div class="team__desc-text">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- <ul class="team__list team--version--mobile">
-                        <li class="team__item">
-                            <button class="team__title" type="button"> 
-                                Борис Федорович
-                                <svg class="team__title-icon">
-                                    <use xlink:href="sprite.svg#triangle"></use>
-                                </svg>
-                            </button>
-                            <div class="team__desc team__desc--active">
-                                <div class="team__desc-container">
-                                    <div class="team__member">
-                                        <img class="team__member-avatar" src="./img/member_avatar1.png" alt="">
-                                    </div>
-                                    <div class="team__desc-title">Главный технолог</div>
-                                    <div class="team__desc-text">Отвечает за вкусовые качества и калорийность.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <button class="team__title" type="button"> 
-                                Анна Иванова
-                                <svg class="team__title-icon">
-                                    <use xlink:href="sprite.svg#triangle"></use>
-                                </svg>
-                            </button>
-                            <div class="team__desc">
-                                <div class="team__desc-container">
-                                    <div class="team__member">
-                                        <img class="team__member-avatar" src="./img/member_avatar2.png" alt="">
-                                    </div>
-                                    <div class="team__desc-title">Специалист по упаковке</div>
-                                    <div class="team__desc-text">Автор запоминающегося стиля наших батончиков.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <button class="team__title" type="button"> 
-                                Кирилл Матросов
-                                <svg class="team__title-icon">
-                                    <use xlink:href="sprite.svg#triangle"></use>
-                                </svg>
-                            </button>
-                            <div class="team__desc">
-                                <div class="team__desc-container">
-                                    <div class="team__member">
-                                        <img class="team__member-avatar" src="./img/member_avatar3.png" alt="">
-                                    </div>
-                                    <div class="team__desc-title">Оператор</div>
-                                    <div class="team__desc-text">Разработал дизан наушников beats solo 3.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <button class="team__title" type="button"> 
-                                Мила Рыжкова
-                                <svg class="team__title-icon">
-                                    <use xlink:href="sprite.svg#triangle"></use>
-                                </svg>
-                            </button>
-                            <div class="team__desc">
-                                <div class="team__desc-container">
-                                    <div class="team__member">
+                                    <div class="team__member team__member--mobile">
                                         <img class="team__member-avatar" src="./img/member_avatar4.png" alt="">
                                     </div>
                                     <div class="team__desc-title">PR, маркетинг</div>
@@ -459,7 +401,7 @@
                                 </div>
                             </div>
                         </li>
-                    </ul> -->
+                    </ul>
                 </div>
             </section>
             <section class="section reviews">
@@ -561,25 +503,25 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input name="street" type="text" class="form__input" required>
+                                    <input name="street" type="text" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input name="house" type="text" class="form__input" required>
+                                    <input name="house" type="text" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input name="housing" type="text" class="form__input" required>
+                                    <input name="housing" type="text" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input name="flat" type="text" class="form__input" required>
+                                    <input name="flat" type="text" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input name="floor" type="text" class="form__input" required>
+                                    <input name="floor" type="text" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -587,7 +529,7 @@
                             <div class="form__row form__row-textarea">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea name="comment" class="form__input form__input-textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input-textarea" required></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -610,7 +552,7 @@
                                 </label>
                             </div>
                             <div class="form__btns">
-                                <button type="submit" class="btn btn-red" data-fancybox data-src="#modalWindow" id="sendButton">Заказать</button>
+                                <button type="submit" class="btn btn-red" id="sendButton">Заказать</button>
                                 <button type="reset" class="btn btn-transparent">Очистить</button>
                             </div>
                         </div>
@@ -740,7 +682,6 @@
             </div>
         </div>
         <script src="./js/jquery.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script src="./js/modal.js"></script>

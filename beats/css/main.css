@@ -1260,18 +1260,13 @@ img {
   height: 100%;
 }
 
-.team--version--dekstop .team__content {
-  position: absolute;
-  top: 100%;
-}
-@media screen and (max-width: 768px) {
-  .team--version--dekstop {
-    display: none;
-  }
-}
-
 .team__content-title {
   margin-bottom: 3.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .team__content-title {
+    margin-bottom: 2rem;
+  }
 }
 
 .team__list {
@@ -1279,9 +1274,21 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .team__item {
   margin-right: 1.25rem;
+  text-align: center;
 }
 .team__item:last-child {
   margin-right: 0;
@@ -1289,6 +1296,12 @@ img {
 @media screen and (max-width: 768px) {
   .team__item {
     margin-right: 0;
+    max-width: 13.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__item.active {
+    margin-bottom: 0.8125rem;
   }
 }
 
@@ -1297,8 +1310,23 @@ img {
   height: 18.125rem;
   margin-bottom: 1.5625rem;
 }
+@media screen and (max-width: 768px) {
+  .team__member {
+    display: none;
+  }
+}
+.team__member--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__member--mobile {
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+}
 
 .team__title {
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.3125rem;
@@ -1309,11 +1337,17 @@ img {
   width: 0.5rem;
   height: 0.4375rem;
 }
+@media screen and (max-width: 768px) {
+  .team__title {
+    font-size: 1.3125rem;
+    line-height: 1.5625rem;
+  }
+}
 
 .team__desc {
   overflow: hidden;
   height: 0;
-  padding-top: 0.6875rem;
+  padding-top: 0.875rem;
 }
 
 .team__desc-container {
@@ -1337,16 +1371,12 @@ img {
   .team__desc-title {
     font-weight: 700;
     font-size: 1.125rem;
+    margin-bottom: 0.3125rem;
   }
 }
 
 .team__desc-text {
   color: #666666;
-}
-@media screen and (max-width: 768px) {
-  .team__desc-text {
-    padding: 0% 20%;
-  }
 }
 
 .reviews__container {
@@ -2010,4 +2040,7 @@ img {
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: #000;
+}
+.modal__content--error {
+  color: red;
 }

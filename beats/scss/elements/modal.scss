@@ -23,4 +23,8 @@
     font-size: rem(18px);
     line-height: rem(24px);
     color: #000;
+
+    &--error {
+        color: red;
+    }
 }

@@ -22,6 +22,7 @@ $("#form").submit(e => {
 
     const modal = $("#modalWindow");
     const content = modal.find(".modal__content");
+    content.removeClass('modal__content--error');
 
     const isValid = validateFields(form, [name, phone, comment, to]);
 
@@ -37,6 +38,14 @@ $("#form").submit(e => {
             },
             success: (data) => {
                 content.text(data.message);
+                Fancybox.show([{ 
+                    src: "#modalWindow", 
+                    type: "inline" 
+                }]);
+            },
+            error: (data) => {
+                content.text('Произошла ошибка, попробуйте заново');
+                content.addClass('modal__content--error');
                 Fancybox.show([{ 
                     src: "#modalWindow", 
                     type: "inline" 
