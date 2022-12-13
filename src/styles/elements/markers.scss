@@ -1,0 +1,33 @@
+.marker {
+    display: flex;
+    align-items: center;
+}
+
+.markers__list {
+    display: flex;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.marker__item {
+    margin-right: rem(10px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.marker__text {
+    max-width: rem(114px);
+}
+
+.marker-icon__wrapper {
+    margin-right: rem(12px);
+}
+
+.marker__icon {
+    height: rem(41px);
+    width: rem(41px);
+}
