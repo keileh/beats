@@ -1,0 +1,132 @@
+.player-section {
+    background: #F8FAF9;
+}
+
+.player-section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.player__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player__splash {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+
+    // &:before {
+    //     content: url('../img/play.svg');
+    //     position: absolute;
+    //     width: 100px;
+    //     height: 100px;
+    //     top: 50%;
+    //     left: 50%;
+    // }
+
+    &-image {
+        height: rem(400px);
+        width: rem(662px);
+    }
+}
+
+.player__controls {
+    background: #151515;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: rem(662px);
+    height: rem(35px);
+    top: rem(710px);
+}
+
+.player__start {
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.player__playback {
+    position: relative;
+    height: rem(15px);
+    width: rem(444px);
+
+    &-button {
+        border: none;
+        width: rem(15px);
+        height: rem(15px);
+        background: #E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+
+    &-red {
+        &:before {
+            content: "";
+            top: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: block;
+            transform: translateY(-50%);
+            width: rem(443px);
+            height: rem(4px);
+            background: #E01F3D;
+        }
+    }
+
+    &:before {
+        content: "";
+        top: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: block;
+        transform: translateY(-50%);
+        width: rem(443px);
+        height: rem(4px);
+        background: #333333;
+    }
+}
+
+.player__volume {
+    position: relative;
+}
+
+.player__volume-button {
+    background: none;
+    border: none;
+}
+
+.volume__button-icon {
+    width: rem(12px);
+    height: rem(16px);
+}
+
+.player__regulator {
+    position: relative;
+    width: rem(62px);
+    height: rem(4px);
+    background: #333333;
+    
+    &-button {
+        border: none;
+        width: rem(15px);
+        height: rem(15px);
+        background: #E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+}
