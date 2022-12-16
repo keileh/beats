@@ -30,7 +30,7 @@
     display: block;
     position: relative;
 
-    &::before {
+    &:before {
         content: url();
         display: block;
         width: rem(10px);

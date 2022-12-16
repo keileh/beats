@@ -19,10 +19,25 @@
     top: 0;
     bottom: 0;
     display: flex;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+    }
 }
 
 .colors__item {
     display: flex;
+    
+    &.active {
+        @include phones {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .colors__wrapper {
@@ -46,6 +61,11 @@
 .colors__item-title {
     position: relative;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: rem(105px);
 }
 
 .colors__item-text {
