@@ -16,6 +16,16 @@
     align-items: center;
     width: rem(662px);
     height: rem(392px);
+
+    @include tablets {
+        width: rem(600px);
+        height: rem(352px);
+    }
+
+    @include phones {
+        width: rem(394px);
+        height: rem(234px);
+    }
 }
 
 .player {
